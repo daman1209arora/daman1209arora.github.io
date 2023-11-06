@@ -1,0 +1,8 @@
+@misc{arora2023learning,
+      title={Learning and Leveraging Verifiers to Improve Planning Capabilities of Pre-trained Language Models}, 
+      author={Daman Arora and Subbarao Kambhampati},
+      year={2023},
+      eprint={2305.17077},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}

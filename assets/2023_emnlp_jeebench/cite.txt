@@ -1,0 +1,8 @@
+@misc{arora2023llms,
+      title={Have LLMs Advanced Enough? A Challenging Problem Solving Benchmark For Large Language Models}, 
+      author={Daman Arora and Himanshu Gaurav Singh and Mausam},
+      year={2023},
+      eprint={2305.15074},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
