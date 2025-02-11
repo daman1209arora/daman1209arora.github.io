@@ -1,6 +1,15 @@
-@inproceedings{ranjan2022greed,
-  title={GREED: A Neural Framework for Learning Graph Distance Functions},
-  author={Ranjan, Rishabh and Grover, Siddharth and Medya, Sourav and Chakaravarthy, Venkatesan and Sabharwal, Yogish and Ranu, Sayan},
-  booktitle={Advances in Neural Information Processing Systems},
-  year={2022}
+@InProceedings{pmlr-v180-sharma22a,
+  title = 	 {SymNet 2.0: Effectively handling Non-Fluents and Actions in Generalized Neural Policies for RDDL Relational MDPs},
+  author =       {Sharma, Vishal and Arora, Daman and Gei\ss{}er, Florian and Mausam and Singla, Parag},
+  booktitle = 	 {Proceedings of the Thirty-Eighth Conference on Uncertainty in Artificial Intelligence},
+  pages = 	 {1771--1781},
+  year = 	 {2022},
+  editor = 	 {Cussens, James and Zhang, Kun},
+  volume = 	 {180},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {01--05 Aug},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v180/sharma22a/sharma22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v180/sharma22a.html},
+  abstract = 	 {Relational MDPs (RMDPs) compactly represent an infinite set of MDPs with an unbounded number of objects. Solving an RMDP requires a generalized policy that applies to all instances of a domain. Recently, Garg et al. proposed SymNet for this task– it constructs a graph neural network that shares parameters across all instances in a domain, thus making it applicable to any instance in a zero-shot manner. Our analysis of SymNet reveals that it performs no better than random on 1/4th of planning competition domains. The key reasons are its design choices: it misses important information during graph construction, leading to (1) poor generalizability, and (2) potential non-identifiability of different actions. In response, our solution, SymNet2.0, substantially augments SymNet’s graph construction approach by introducing additional nodes and edges which allow a better transfer of important information about a domain. It also improves SymNet’s action decoders with relevant information from objects to make different actions identifiable during scoring. Extensive experiments on twelve competition domains, where we use imitation learning over data generated from the PROST planner, demonstrate that SymNet2.0 performs vastly better than SymNet. Interestingly, even though SymNet2.0 is trained over data from PROST, it outperforms the planner on several test instances due to former’s ability to scale to large instances in a zero-shot manner.}
 }

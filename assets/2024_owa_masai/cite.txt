@@ -1,0 +1,8 @@
+@inproceedings{
+wadhwa2024masai,
+title={{MASAI}: Modular Architecture for Software-engineering {AI} Agents},
+author={Nalin Wadhwa and Atharv Sonwane and Daman Arora and Abhav Mehrotra and Saiteja Utpala and Ramakrishna B Bairi and Aditya Kanade and Nagarajan Natarajan},
+booktitle={NeurIPS 2024 Workshop on Open-World Agents},
+year={2024},
+url={https://openreview.net/forum?id=NSINt8lLYB}
+}

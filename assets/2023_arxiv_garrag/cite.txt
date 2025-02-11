@@ -1,0 +1,9 @@
+@misc{arora2023garmeetsragparadigmzeroshotinformation,
+      title={GAR-meets-RAG Paradigm for Zero-Shot Information Retrieval}, 
+      author={Daman Arora and Anush Kini and Sayak Ray Chowdhury and Nagarajan Natarajan and Gaurav Sinha and Amit Sharma},
+      year={2023},
+      eprint={2310.20158},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2310.20158}, 
+}
