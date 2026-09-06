@@ -4,34 +4,56 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<title>daman arora</title>
+	<link rel="icon" type="image/png" href="assets/favicon.png">
+	<title>daman arora — PhD student, CMU MLD</title>
+
+	<meta name="description" content="Daman Arora is a PhD student at the Machine Learning Department at Carnegie Mellon University, working on reasoning and continual learning.">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://daman1209arora.github.io/">
+	<meta property="og:title" content="daman arora">
+	<meta property="og:description" content="PhD student at the Machine Learning Department, Carnegie Mellon University. Reasoning and continual learning.">
+	<meta property="og:image" content="https://daman1209arora.github.io/assets/profile_2026.jpg">
+	<meta name="twitter:card" content="summary">
+
+	<script>
+		// applied before first paint so the page never flashes the wrong theme
+		try {
+			var saved = localStorage.getItem("theme");
+			if (saved) document.documentElement.dataset.theme = saved;
+		} catch (e) {}
+	</script>
 </head>
 
 <body>
-	<img id="profile_pic" src="assets/profile.jpg" alt="Daman photo">
+	<img id="profile_pic" src="assets/profile_2026.jpg" alt="Daman Arora">
 
 	<h1>daman arora</h1>
 
-	<h3>
+	<nav class="links">
 	<a href="assets/CV_Daman_2026_July.pdf" target="_blank">resume</a>
 	| <a  href="https://scholar.google.com/citations?user=vMOWEMAAAAAJ" target="_blank">scholar</a>
 	| <a  href="https://github.com/damana1209" target="_blank">github</a>
 	| <a href="mailto:daman1209arora@gmail.com">email</a>
-	</h3>
+	<button id="theme_toggle" type="button" aria-label="Switch between light and dark theme" title="Switch theme">&#9789;</button>
+	</nav>
 
 	<br>
 
 	<p>
-	<!-- can i commit?	-->
-	<!-- I am a Research Fellow working at Microsoft Research India working on AI Alignment. I have had the good fortune of working with Drs. <a href="https://www.cse.iitd.ac.in/~mausam/">Mausam</a> and <a href="https://www.cse.iitd.ac.in/~parags/">Parag Singla</a> on Generalized Planning at IIT Delhi during my Dual Degree in Computer Science and Engineering. I am interested in reasoning, planning and generalization using Deep Learning methods. I will be applying for a PhD in the 2024 cycle. -->
 	I am a third year PhD student at the Machine Learning Department at Carnegie Mellon University. I am interested in the following questions:
+	</p>
+
 	<ul>
 		<li>how do we make AI systems better at reasoning</li>
 		<li>how can we enable continual learning in the era of modern Deep Learning</li>
 	</ul>
+
+	<p>
 	I am fortunate to be advised by <a href="https://azanette.com">Andrea Zanette</a>.
 	Previously, I worked as a Research Fellow at Microsoft Research India, where I worked on Retrieval and Software Agents with <a href="https://www.microsoft.com/en-us/research/people/nagarajn/">Nagarajan Natarajan</a>.
 	Before that, I spent my undergrad at IIT Delhi where I worked on Generalized Planning with <a href="https://www.cse.iitd.ac.in/~mausam/">Mausam</a> and <a href="https://www.cse.iitd.ac.in/~parags/">Parag Singla</a>.
+	</p>
 	<h2>news</h2>
 
 	<table>
@@ -127,7 +149,32 @@
 
 	<footer>
 		This beautiful template was made by (<a  href="https://github.com/rishabh-ranjan/rishabh-ranjan.github.io">Rishabh Ranjan</a>).
-	<footer>
+	</footer>
+	<script>
+		(function () {
+			var root = document.documentElement;
+			var button = document.getElementById("theme_toggle");
+
+			function isDark() {
+				if (root.dataset.theme) return root.dataset.theme === "dark";
+				return window.matchMedia("(prefers-color-scheme: dark)").matches;
+			}
+
+			function render() {
+				button.textContent = isDark() ? "\u263C" : "\u263D";
+			}
+
+			button.addEventListener("click", function () {
+				root.dataset.theme = isDark() ? "light" : "dark";
+				try {
+					localStorage.setItem("theme", root.dataset.theme);
+				} catch (e) {}
+				render();
+			});
+
+			render();
+		})();
+	</script>
 </body>
 
 </html>
