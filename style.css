@@ -7,6 +7,7 @@
 	--link: green;
 	--rule: black;
 	--muted: #888;
+	--accent: #a13d24;
 }
 
 body {
@@ -45,6 +46,22 @@ h2 {
 	font-size: 2rem;
 	margin-top: 3rem;
 	margin-bottom: 0.5rem;
+}
+
+.oral-badge {
+	background: var(--accent);
+	border-radius: 999px;
+	color: #fffaf4;
+	display: inline-block;
+	font-size: 0.72rem;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.07em;
+	line-height: 1;
+	margin-left: 0.25rem;
+	padding: 0.35rem 0.55rem;
+	text-transform: uppercase;
+	vertical-align: 0.12rem;
 }
 
 .links {
@@ -123,6 +140,7 @@ footer {
 		--link: #7cc47c;
 		--rule: #ccc7bd;
 		--muted: #7d786f;
+		--accent: #d8795d;
 	}
 }
 
@@ -133,4 +151,5 @@ footer {
 	--link: #7cc47c;
 	--rule: #ccc7bd;
 	--muted: #7d786f;
+	--accent: #d8795d;
 }
