@@ -8,6 +8,7 @@
 	--rule: black;
 	--muted: #888;
 	--accent: #a13d24;
+	--outstanding: #b21f40;
 }
 
 body {
@@ -48,7 +49,7 @@ h2 {
 	margin-bottom: 0.5rem;
 }
 
-.oral-badge {
+.paper-badge {
 	background: var(--accent);
 	border-radius: 999px;
 	color: #fffaf4;
@@ -62,6 +63,10 @@ h2 {
 	padding: 0.35rem 0.55rem;
 	text-transform: uppercase;
 	vertical-align: 0.12rem;
+}
+
+.outstanding-badge {
+	background: var(--outstanding);
 }
 
 .links {
@@ -141,6 +146,7 @@ footer {
 		--rule: #ccc7bd;
 		--muted: #7d786f;
 		--accent: #d8795d;
+		--outstanding: #bb3152;
 	}
 }
 
@@ -152,4 +158,30 @@ footer {
 	--rule: #ccc7bd;
 	--muted: #7d786f;
 	--accent: #d8795d;
+	--outstanding: #bb3152;
+}
+
+@media (max-width: 600px) {
+	body {
+		padding-top: 2rem;
+	}
+
+	#profile_pic {
+		float: none;
+		display: block;
+		width: 140px;
+		margin: 0 auto 1.5rem;
+	}
+
+	h1 {
+		font-size: 3rem;
+		margin-top: 0;
+		text-align: center;
+	}
+
+	.links {
+		justify-content: center;
+		flex-wrap: wrap;
+		font-size: 1rem;
+	}
 }
