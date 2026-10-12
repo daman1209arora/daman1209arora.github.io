@@ -1,0 +1,150 @@
+\documentclass[11pt,letterpaper]{article}
+
+% Build with: tectonic --outdir assets CV_Daman.tex
+\usepackage[margin=0.78in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{needspace}
+
+\definecolor{cvOral}{HTML}{0F6875}
+\definecolor{cvOutstanding}{HTML}{B21F40}
+\newcommand{\oralhighlight}{\textup{\textcolor{cvOral}{\textbf{Oral}}}}
+\newcommand{\outstandinghighlight}{\textup{\textcolor{cvOutstanding}{\textbf{Outstanding Paper}}}}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue!55!black,
+  pdftitle={Daman Arora - Curriculum Vitae},
+  pdfauthor={Daman Arora}
+}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\newcommand{\cvsection}[1]{%
+  \Needspace{4\baselineskip}%
+  \vspace{11pt}%
+  {\bfseries\MakeUppercase{#1}}\par\vspace{2pt}\hrule\vspace{5pt}%
+}
+
+\newcommand{\cvsectionnote}[2]{%
+  \Needspace{4\baselineskip}%
+  \vspace{11pt}%
+  {\bfseries\MakeUppercase{#1}}\hspace{0.4em}{\small (#2)}\par\vspace{2pt}\hrule\vspace{5pt}%
+}
+
+\newcommand{\entry}[4]{%
+  \Needspace{3\baselineskip}%
+  \begin{tabular*}{\textwidth}{@{\hspace{0.22in}}p{0.66\textwidth}@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & #2 \\
+    \multicolumn{2}{@{\hspace{0.22in}}l@{}}{#3} \\
+    \multicolumn{2}{@{\hspace{0.22in}}p{\dimexpr\textwidth-0.22in\relax}@{}}{#4}
+  \end{tabular*}\par\vspace{4pt}%
+}
+
+\newcommand{\shortentry}[3]{%
+  \Needspace{2\baselineskip}%
+  \begin{tabular*}{\textwidth}{@{\hspace{0.22in}}p{0.66\textwidth}@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & #2 \\
+    \multicolumn{2}{@{\hspace{0.22in}}l@{}}{#3}
+  \end{tabular*}\par\vspace{4pt}%
+}
+
+\newcommand{\pub}[4]{%
+  \Needspace{3\baselineskip}%
+  \hspace*{0.22in}\begin{minipage}[t]{\dimexpr\textwidth-0.22in\relax}
+    #1, ``#2,'' \emph{#3}, #4.
+  \end{minipage}\par\vspace{8pt}%
+}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE DAMAN ARORA}\par\vspace{8pt}
+  \href{mailto:damana@andrew.cmu.edu}{damana@andrew.cmu.edu}
+  $\diamond$ \href{https://daman1209arora.github.io}{daman1209arora.github.io}
+\end{center}
+\vspace{-4pt}
+
+\cvsection{Education}
+\entry{Carnegie Mellon University}{2024--2029 (expected)}
+  {Ph.D. in Machine Learning; GPA: \textbf{4.0}}
+  {Advisor: Andrea Zanette}
+\entry{Indian Institute of Technology Delhi}{2018--2023}
+  {B.Tech. and M.Tech. in Computer Science; CGPA: \textbf{9.4}}
+  {Thesis: Learning Generalized Neural Policies for Relational MDPs\newline
+   Advisors: Mausam and Parag Singla}
+
+
+\cvsectionnote{Publications}{* denotes equal contribution}
+\pub{Xuecheng Liu*, \textbf{Daman Arora*}, Gokul Swamy, Andrea Zanette}
+  {Message Passing Enables Efficient Reasoning}
+  {Conference on Language Modeling (COLM), \outstandinghighlight}
+  {2026. \href{https://arxiv.org/abs/2607.01077}{arXiv:2607.01077}}
+\pub{\textbf{Daman Arora}, Andrea Zanette}
+  {Training Language Models to Reason Efficiently}
+  {Conference on Neural Information Processing Systems (NeurIPS)}
+  {2025. \href{https://arxiv.org/abs/2502.04463}{arXiv:2502.04463}}
+\pub{Fahim Tajwar*, Guanning Zeng*, Yueer Zhou, Yuda Song, \textbf{Daman Arora}, Yiding Jiang, Jeff Schneider, Ruslan Salakhutdinov, Haiwen Feng, Andrea Zanette}
+  {Maximum Likelihood Reinforcement Learning}
+  {International Conference on Machine Learning (ICML), \oralhighlight; Best Paper at SPOT (ICLR)}
+  {2026. \href{https://arxiv.org/abs/2602.02710}{arXiv:2602.02710}}
+\pub{\textbf{Daman Arora*}, Himanshu Gaurav Singh*, Mausam}
+  {Have LLMs Advanced Enough? A Challenging Problem Solving Benchmark for Large Language Models}
+  {Conference on Empirical Methods in Natural Language Processing (EMNLP)}
+  {2023. \href{https://arxiv.org/abs/2305.15074}{arXiv:2305.15074}}
+\pub{Guanning Zeng*, Zhaoyi Zhou, \textbf{Daman Arora}, Andrea Zanette}
+  {Shrinking the Variance: Shrinkage Baselines for Reinforcement Learning with Verifiable Rewards}
+  {International Conference on Machine Learning (ICML)}
+  {2026. \href{https://arxiv.org/abs/2511.03710}{arXiv:2511.03710}}
+\pub{Vishal Sharma*, \textbf{Daman Arora*}, Mausam, Parag Singla}
+  {SymNet 3.0: Exploiting Long-Range Influences in Learning Generalized Neural Policies for Relational MDPs}
+  {Conference on Uncertainty in Artificial Intelligence (UAI)}
+  {2023. \href{https://proceedings.mlr.press/v216/sharma23c.html}{PMLR}}
+\pub{Vishal Sharma, \textbf{Daman Arora}, Florian Gei\ss er, Mausam, Parag Singla}
+  {SymNet 2.0: Effectively Handling Non-Fluents and Actions in Generalized Neural Policies for RDDL Relational MDPs}
+  {Conference on Uncertainty in Artificial Intelligence (UAI)}
+  {2022. \href{https://proceedings.mlr.press/v180/sharma22a.html}{PMLR}}
+
+\cvsection{Workshop Publications}
+\pub{\textbf{Daman Arora*}, Nalin Wadhwa*, Atharv Sonwane*, Abhav Mehrotra, Saiteja Utpala, Ramakrishna B Bairi, Aditya Kanade, Nagarajan Natarajan}
+  {MASAI: Modular Architecture for Software-engineering AI Agents}
+  {NeurIPS Workshop on Open-World Agents}
+  {2024. \href{https://openreview.net/forum?id=NSINt8lLYB}{OpenReview}}
+\pub{\textbf{Daman Arora}, Subbarao Kambhampati}
+  {Learning and Leveraging Verifiers to Improve Planning Capabilities of Pre-trained Language Models}
+  {ICML Workshop on Knowledge and Logical Reasoning in the Era of Data-driven Learning}
+  {2023. \href{https://arxiv.org/abs/2305.17077}{arXiv:2305.17077}}
+
+\cvsection{Preprints}
+\pub{Alvin Zhang, Xuecheng Liu, Zixuan Wang, Fahim Tajwar, \textbf{Daman Arora}, Ruslan Salakhutdinov, Daniel Khashabi, Yuda Song, Andrea Zanette}
+  {Harness Learning Enables Generalizable Test-Time Adaptation}
+  {arXiv preprint}
+  {2026. \href{https://arxiv.org/abs/2609.35738}{arXiv:2609.35738}}
+\pub{Shrinivas Ramasubramanian, \textbf{Daman Arora}, Fahim Tajwar, Guanning Zeng, Qingyang Wu, Zhongzhu Zhou, Chenfeng Xu, Haiwen Feng, Yuda Song, Aarti Singh, Ruslan Salakhutdinov, J. Andrew Bagnell, Jeff Schneider, Andrea Zanette}
+  {Tail-Likelihood Reinforcement Learning}
+  {arXiv preprint}
+  {2026. \href{https://arxiv.org/abs/2609.02987}{arXiv:2609.02987}}
+\pub{\textbf{Daman Arora*}, Anush Kini*, Sayak Ray Chowdhury, Nagarajan Natarajan, Gaurav Sinha, Amit Sharma}
+  {GAR-meets-RAG Paradigm for Zero-Shot Information Retrieval}
+  {arXiv preprint}
+  {2023. \href{https://arxiv.org/abs/2310.20158}{arXiv:2310.20158}}
+
+\cvsection{Honors}
+\hspace*{0.22in}\begin{tabular*}{\dimexpr\textwidth-0.22in\relax}{@{}l@{\extracolsep{\fill}}r@{}}
+  \outstandinghighlight, Conference on Language Modeling & 2026 \\
+  IIT Delhi Merit Award (top 7\%) & 2019 \\
+  KVPY All-India Rank 15 & 2018 \\
+  JEE Advanced All-India Rank 158; JEE Main All-India Rank 118 & 2018
+\end{tabular*}
+
+\cvsection{Work Experience}
+\entry{Microsoft Research India}{June 2023--June 2024}
+  {Research Fellow}
+  {Host: Nagarajan Natarajan; Retrieval and Software Engineering Agents}
+\shortentry{Sprinklr}{May 2022--July 2022}{Software Engineer Intern}
+\shortentry{UiPath}{May 2021--July 2021}{Software Engineer Intern}
+
+\end{document}
